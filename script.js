@@ -11,17 +11,17 @@
       mm = String(today.getMonth() + 1).padStart(2, "0"),
       yyyy = today.getFullYear(),
       nextYear = yyyy + 1,
-      dayMonth = "03/02/",
+      dayMonth = "03/03/",
       birthday = dayMonth + yyyy;
-  
+
   today = mm + "/" + dd + "/" + yyyy;
   if (today > birthday) {
     birthday = dayMonth + nextYear;
   }
   //end
-  
+
   const countDown = new Date(birthday).getTime(),
-      x = setInterval(function() {    
+      x = setInterval(function() {
 
         const now = new Date().getTime(),
               distance = countDown - now;
